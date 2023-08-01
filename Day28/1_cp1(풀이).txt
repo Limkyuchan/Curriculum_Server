@@ -1,0 +1,35 @@
+1. /test 디렉토리랑 /linux 디렉토리 생성
+	
+	mkdir /test /linux
+
+2. /etc/passwd를 /test디렉토리로 복사 하시오
+
+	cp /etc/passwd /test
+
+3. -f 옵션을 써서 /etc/passwd를 /test디렉토리에 복사 (f옵션이 안먹힘-if가 있으면 i옵션 우선순위높음)
+	
+	cp -f /etc/passwd /test
+	yes
+
+4. /test 디렉토리를 /linux 디렉토리로 복사하세요.
+	
+	cp -r /test /linux
+
+5. /etc/passwd를 /test디렉토리에 1이란 이름으로 복사하세요.
+
+	cp /etc/passwd /test/1
+
+6. /test 디렉토리 밑에 1과 passwd를 /linux디렉토리로 복사하세요. 한번에
+
+	cp /test/1 test/passwd /linux
+	cp /test/{1,passwd} /linux
+
+7. /test디렉토리에 2란 디렉토리를 생성하세요.
+
+	mkdir /test/2
+
+8. /test디렉토리 밑에 있는 것 전부를 /linux 디렉토리로 복사하세요.
+	
+	cp -r /test/* /linux
+
+rm -rf 지울 대상

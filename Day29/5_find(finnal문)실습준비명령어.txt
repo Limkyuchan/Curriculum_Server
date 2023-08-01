@@ -1,0 +1,24 @@
+실습 준비 명령어>
+
+mkdir /root/findtest
+cd /root/findtest
+pwd 확인
+
+mkdir test test1 test2 test3 test11 test22 
+mkdir test33 1test 2test 3test 4test 111test 222test 33test
+
+echo 123456-1234567 > 123456-1234567
+echo 111111-1111111 > 111111-1111111
+echo 222222-2222222 > 222222-2222222 
+echo 010-1234-5678 > 010-1234-5678
+echo 010-666-9999 > 010-666-9999
+echo 070-1111-9999 > 070-1111-9999
+
+touch abc@naver.com abc123@naver.com aaa@nate.com 
+touch bbb@gmail.com www.google.co.kr www.naver.com www.wireshark.org
+
+cp /etc/passwd a.b.c	
+ln -s a.b.c a.b.c.link	
+
+cp /etc/resolv.conf z.x
+ln -s z.x z.x.link

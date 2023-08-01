@@ -1,0 +1,38 @@
+랜카드 설정 정보 확인
+ifconfig
+
+랜카드 활성화
+ifup ens33
+
+비활성화
+ifdown ens33
+
+CentOS IP수동 설정
+vi /etc/sysconfig/network-scripts/ifcfg-ens33 
+ONBOOT=yes
+BOOTPROTO=static
+IPADDR=192.168.41.89
+NETMASK=255.255.255.0
+GATEWAY=192.168.41.1
+DNS1=168.126.63.1
+
+웹 서비스 패키지 설치
+#yum -y install httpd
+
+서비스 시작
+#systemctl start httpd.service
+
+포트 확인
+#netstat -atunp | grep httpd
+
+외부접속위한 방화벽 설정
+#firewall-cmd --permanent --zone=public --add-port=80/tcp
+
+#firewall-cmd --reload
+
+웹브라우저에서 접속 테스트
+http://localhost
+http://127.0.0.1
+http://자신의IP
+
+
